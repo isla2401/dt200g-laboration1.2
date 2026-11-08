@@ -1,0 +1,16 @@
+/* Hämtar nedladdade typsnitt */
+@font-face {
+	font-family: "barberChop";
+	src: url("../assets/BarberChop.otf");
+}
+
+body {
+  font-family: "Lexend", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+	font-family: "barberChop", sans-serif;
+    letter-spacing: 0.1rem;
+}
