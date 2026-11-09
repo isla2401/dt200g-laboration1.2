@@ -18,12 +18,16 @@
 <body>
     <!-- Sidhuvud med navigation -->
     <header>
-        <a href="index.html"><img class="logo" src="images/logo.svg" alt="Isacs bilder. Leder till startsidan."></a>
 
-        <img class="menu-icon" src="images/menu.svg" alt="Öppna meny">
+        <!-- Logga och menyknapp -->
+        <div class="logo-button-container">
+            <a class="logo-link" href="index.html"><img class="logo" src="images/logo.svg"
+                    alt="Isacs bilder. Leder till startsidan."></a>
+            <button id="menu-button"><img class="menu-icon" src="images/menu.svg" alt="Öppna meny"></button>
+        </div>
 
         <!--  Navigationsmeny -->
-        <nav>
+        <nav class="hidden">
             <ul>
                 <li><a href="index.html">Startsida</a></li>
                 <li><a href="image-editing.html">Bildredigering</a></li>
@@ -34,10 +38,12 @@
 
     <!--  Huvudinnehåll -->
     <main>
+        <img class="hero-image" src="images/header.png" alt="">
+
         <h1>Isacs bilder</h1>
 
         <!--  Uppgiftsbeskrivning -->
-        <section class="assignment-description">
+        <section>
             <h2>Uppgiftsbeskrivning</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vitae voluptate laborum molestiae
                 architecto
@@ -47,13 +53,14 @@
         </section>
 
         <!--  Bildserie -->
-        <section class="images-start">
+        <section>
             <h2>Bildserie</h2>
-            <img src="images/bilserie007.jpg" alt="">
-            <img src="images/bilserie008.jpg" alt="">
-            <img src="images/bilserie018.jpg" alt="">
+            <div class="images-container">
+                <img src="images/bilserie007.jpg" alt="">
+                <img src="images/bilserie008.jpg" alt="">
+                <img src="images/bilserie018.jpg" alt="">
+            </div>
         </section>
-
     </main>
 
     <!--  Sidfot -->

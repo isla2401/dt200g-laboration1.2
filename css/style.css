@@ -4,13 +4,128 @@
 	src: url("../assets/BarberChop.otf");
 }
 
+/* ================================= GLOBALT ================================= */
+
+/* Variabler */
+:root {
+	/* Färger */
+	--color-1: #d6d5c9;
+	--color-2: #0c0c0c;
+	--color-3: #902923;
+	--color-4: #a22c29;
+
+	/* Spacing */
+	--spacing-edge: 7vw; /* Utrymme mellan sidans kant och närmsta element */
+}
+
+* {
+	box-sizing: border-box;
+}
+
 body {
-  font-family: "Lexend", sans-serif;
+	font-family: "Lexend", sans-serif;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	background-color: var(--color-2);
+	color: var(--color-1);
 }
 
 h1,
 h2,
 h3 {
 	font-family: "barberChop", sans-serif;
-    letter-spacing: 0.1rem;
+	letter-spacing: 0.1rem; /* Mer luft mellan bokstäver */
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ================================= HEADER ================================= */
+
+header {
+	background-color: var(--color-1);
+}
+
+/* Container för logga och menyknapp på mobil */
+header .logo-button-container {
+	padding: 1rem var(--spacing-edge);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Länk på logga */
+header .logo-link {
+	width: 30%;
+}
+
+/* Knapp för mobilmeny */
+header button {
+	border: none;
+	padding: 0;
+	height: 2rem;
+	width: 2rem;
+	background-color: transparent;
+}
+
+header button img {
+	width: 100%;
+}
+
+header nav.hidden {
+	display: none; /* Dölj mobilmeny */
+}
+
+header ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+header li {
+	padding: 1rem 0;
+	border-top: 1px solid var(--color-4);
+	background-color: var(--color-3);
+}
+
+header li a {
+	color: var(--color-1);
+	text-decoration: none;
+	font-weight: 600;
+}
+
+/* ================================= MAIN ================================= */
+
+main > *:not(.hero-image) {
+	padding: 0 var(--spacing-edge); /* Padding på allt utom hero */
+}
+
+/* ================================= FOOTER ================================= */
+
+footer {
+	background-color: var(--color-3);
+	padding: 1rem var(--spacing-edge) 2rem;
+	color: var(--color-1);
+	margin-top: 2rem;
+}
+
+/* ================================================================== 
+----------------------------- STARTSIDA -----------------------------
+================================================================== */
+
+.hero-image {
+	opacity: 0.7;
+}
+
+main section {
+	margin: 3rem 0;
+}
+
+/* Container för bilder på startsidan */
+.images-container{
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
 }
