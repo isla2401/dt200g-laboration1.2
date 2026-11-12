@@ -29,6 +29,7 @@ body {
 	text-align: center;
 	background-color: var(--color-2);
 	color: var(--color-1);
+	word-wrap: break-word; /* Gör att långa ord kan brytas på små skärmar */
 }
 
 h1,
