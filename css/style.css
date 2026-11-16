@@ -13,6 +13,7 @@
 	--color-2: #111111;
 	--color-3: #8d332e;
 	--color-4: #973833;
+	--color-5: #7a2d29;
 
 	/* Spacing */
 	--spacing-edge: 7vw; /* Utrymme mellan sidans kant och närmsta element */
@@ -103,7 +104,6 @@ header ul {
 }
 
 header li {
-	padding: 1rem 0;
 	border-top: 1px solid var(--color-4);
 	background-color: var(--color-3);
 }
@@ -112,6 +112,12 @@ header li a {
 	color: var(--color-1);
 	text-decoration: none;
 	font-weight: 600;
+	display: block;
+	padding: 1.2rem 0;
+}
+
+header li.current {
+	background-color: var(--color-5);
 }
 
 /* ================================= MAIN ================================= */
@@ -212,10 +218,22 @@ footer {
 
 	header li a {
 		color: var(--color-2);
+		padding: 0;
 	}
 
 	header li a:hover {
 		color: var(--color-3);
+	}
+
+	header li.current {
+		background-color: transparent;
+	}
+
+	/* Linje under den nuvarande sidan i menyn */
+	header li.current > a {
+		text-decoration: underline;
+		text-underline-offset: 5px;
+		text-decoration-thickness: 3px;
 	}
 
 	/* ----------------- MAIN - STARTSIDA ----------------- */
