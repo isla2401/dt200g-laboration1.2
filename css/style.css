@@ -131,7 +131,7 @@ main > *:not(.hero-image) {
 }
 
 main p {
-	max-width: 50rem;
+	max-width: 60rem;
 	margin: 0 auto;
 }
 
@@ -159,6 +159,32 @@ main section {
 	border: 5px solid var(--color-1);
 }
 
+/* ----------------- MAIN - BILDREDIGERING ----------------- */
+
+.image-edit-container {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin-bottom: 1.5rem;
+}
+
+.image-edit-container figure {
+	margin: 0;
+	background-color: var(--color-1);
+	border: 5px solid var(--color-1);
+}
+
+.image-edit-container figcaption {
+	color: var(--color-2);
+	margin: 0.4rem 0 0.5rem;
+	font-style: italic;
+	font-weight: 300;
+}
+
+.image-edit-container img {
+	width: 100%;
+}
+
 /* ----------------- MAIN - OM MIG ----------------- */
 
 .portrait-image {
@@ -177,7 +203,6 @@ footer {
 	background-color: var(--color-3);
 	padding: 1rem var(--spacing-edge) 2rem;
 	color: var(--color-1);
-	margin-top: 2rem;
 }
 
 /* ================================= MEDIA QUERIES ================================= */
@@ -247,5 +272,13 @@ footer {
 
 	.images-container img {
 		height: 20rem;
+	}
+
+	/* ----------------- MAIN - BILDREDIGERING ----------------- */
+
+	.image-edit-container {
+		flex-direction: row;
+		max-width: 60rem;
+		margin: 0 auto 1.5rem;
 	}
 }
